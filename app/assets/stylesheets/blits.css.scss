@@ -1,0 +1,48 @@
+// Place all the styles related to the Blits controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.blits {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+  background: #98AFC7;
+  text-align:center;
+
+   #content {
+	 width:450px;
+	 margin:0px auto;
+	 text-align:left;
+	 padding:15px;
+	 border:1px dashed #333;
+	 background-color:#eee;
+   }
+
+  .line_odd {
+    background: #87CEFA;
+    border:1px solid;
+    border-radius:5px;
+    padding: 5px;
+    width:400px;
+    margin-right: auto;
+  }
+
+  .line_even {
+    background: #F0F8FF;
+    border:1px solid;
+    border-radius:5px;
+    text-align:right;
+    padding: 5px;
+    width:300px;
+    margin-left: auto;
+  }
+
+  .user_name {
+    font-weight:  bold;
+  }
+
+  .user_name:hover {
+    font-weight:  bold;
+    text-decoration: underline;
+  }
+}

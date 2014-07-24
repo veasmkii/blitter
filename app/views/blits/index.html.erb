@@ -1,0 +1,19 @@
+<body>
+<div id="content">
+<h1>Welcome to Blitter!</h1><br/>
+<h2>Listing blits (Total: <%= @blits.count %>)</h2>
+
+<%= link_to 'Add Blit', new_blit_path %>
+<br/><br/>
+<% @blits.each do |blit| %>
+
+<div class="<%= cycle( 'line_odd','line_even' ) %>"><span class="user_name"><%= blit.user %></span> says '<%= blit.message %>'</div>
+
+<div class="<%= cycle( 'line_odd','line_even' ) %>"><%= blit.created.strftime("Blitted @%m/%d/%Y %I:%M%P")%> <%= link_to 'Edit', edit_blit_path(blit) %> <%= link_to 'Delete', blit, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<br/>
+
+<% end %>
+
+<%= link_to 'Add Blit', new_blit_path %>
+</div>
+</body>

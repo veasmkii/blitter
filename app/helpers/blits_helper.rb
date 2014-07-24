@@ -1,0 +1,2 @@
+module BlitsHelper
+end

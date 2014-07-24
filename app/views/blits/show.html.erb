@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @blit.user %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @blit.message %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @blit.created %>
+</p>
+
+
+<%= link_to 'Edit', edit_blit_path(@blit) %> |
+<%= link_to 'Back', blits_path %>
